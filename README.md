@@ -51,7 +51,7 @@ The key steps involved in this project include:
 - Looker Studio: Looker Studio is a cloud-based business intelligence and data analytics platform that allows you to visualize and explore data from various sources. 
 
 ### **Implementation Plan** 
-
+[Click here to access details instructions](detailed_instructions.md)
 - Set up a Google Cloud Platform (GCP) account and create a project.
 - Provision Virtual Machine (VM) instances to run the necessary infrastructure.
 - Use Terraform to create a network infrastructure
