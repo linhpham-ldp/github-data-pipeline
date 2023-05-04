@@ -4,11 +4,11 @@ with commits as (
 ),
 users as (
     select *
-    from {{ ref('dim_users') }}
+    from {{ ref('stg_users') }}
 ),
 org as (
     select *
-    from {{ ref('dim_org') }}
+    from {{ ref('stg_org') }}
 )
 select c.actor_id,
        c.actor_login,
