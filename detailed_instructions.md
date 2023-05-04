@@ -105,8 +105,9 @@ We will use Prefect Cloud to monitor the flow.
 ### Step 2: Data Modeling
 We will use dbt Cloud to monitor the flow. 
 <details>
-  <summary>Forsetup screenshots, click here</summary>
+  <summary>For setup screenshots, click here</summary>
   > ![github-data-pipeline](images/dbt_cloud_01.png)
+  >
   > ![github-data-pipeline](images/dbt_cloud_02.png)
   > ![github-data-pipeline](images/dbt_cloud_03.png)
   > ![github-data-pipeline](images/dbt_cloud_04.png)
