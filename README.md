@@ -1,4 +1,4 @@
-# Github Data Pipeline
+# Github Archive Data Pipeline
 
 Reproducible end-to-end data pipeline to transform ecommerce purchase data into actionable insights
 
