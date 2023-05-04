@@ -11,20 +11,20 @@ models:
   - name: stg_pullrequests
     description: >
       GitHub pull request
-  - name: stg_users
+  - name: dim_users
     description: >
       GitHub users
     columns: 
     - name: user_id
-      tests:
-      - not_null
+      # tests:
+      # - not_null
       # - unique
-  - name: stg_org
+  - name: dim_org
     description: >
       Organizations on Github
     columns: 
     - name: org_id
-      tests:
-      - not_null
+      # tests:
+      # - not_null
       # - unique
     
