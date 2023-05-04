@@ -1,8 +1,6 @@
 version: 2
 sources:
-  - name: staging
-    database: github-data-pipeline
-    schema: gh_archive_staging
+  - name: gh_archive_staging
     tables:
         - name: raw_data_v3
 

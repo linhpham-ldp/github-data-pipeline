@@ -1,4 +1,4 @@
-{{ config(materialized='view', schema='staging') }}
+{{ config(materialized='view') }}
 
-select * from {{ ref('raw_data_v3') }}
+select * from {{ source('gh_archive_staging','raw_data_v3') }}
 where type = 'PushEvent'
