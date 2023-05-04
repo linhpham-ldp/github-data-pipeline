@@ -4,3 +4,4 @@ models:
   - name: dim_users
   - name: dim_org
   - name: hourly_trend
+  - name: weekday_trend
