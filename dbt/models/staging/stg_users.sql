@@ -1,4 +1,4 @@
-{{ config(materialized='view') }}
+{{ config(materialized='table') }}
 
 with source as (
     select *
@@ -10,7 +10,7 @@ renamed as (
            actor_gravatar_id as user_gravatar_id,
            actor_url as user_url,
            actor_avatar_url as user_avatar_url
-    from source
+    from source  
 )
 select distinct *
 from renamed

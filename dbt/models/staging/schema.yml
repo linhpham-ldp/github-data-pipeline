@@ -5,12 +5,9 @@ sources:
         - name: raw_data_v3
 
 models:
-  - name: stg_commits
+  - name: stg_gh_archive_partition.sql
     description: >
-      GitHub commits
-  - name: stg_pullrequests
-    description: >
-      GitHub pull request
+      GitHub Archive event data partitioned by created date
   - name: stg_users
     description: >
       GitHub users
