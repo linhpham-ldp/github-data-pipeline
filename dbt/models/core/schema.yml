@@ -1,5 +1,5 @@
 version: 2
 
 models:
-  - name: users
-  - name: organization
+  - name: dim_users
+  - name: dim_org
