@@ -87,7 +87,9 @@ Terraform will ask for your Project ID. Type it and press enter to let Terraform
 terraform apply
 ```
 
-You should be able to see in Google Cloud Storage (data lake name) and Google Big Query (3 objects: gh_archive_staging, gh_archive_production, gh_archive_development)
+In Google Cloud Storage, you should be able to see the data lake bucket.
+In Big Query, you should be able to see gh_archive_staging, gh_archive_production, gh_archive_development.
+
 ---
 
 ## **Data Pipeline**
@@ -99,3 +101,23 @@ We will use Prefect Cloud to monitor the flow.
  >>> prefect deployment run etl-main-flow/github-data-pipeline # (to avoid waiting for the cronjob time)
  >>> prefect agent start --work-queue "default"
 ```
+
+### Step 2: Data Modeling
+We will use dbt Cloud to monitor the flow. 
+<details>
+  <summary>Forsetup screenshots, click here</summary>
+  > ![github-data-pipeline](images/dbt_cloud_01.png)
+  > ![github-data-pipeline](images/dbt_cloud_02.png)
+  > ![github-data-pipeline](images/dbt_cloud_03.png)
+  > ![github-data-pipeline](images/dbt_cloud_04.png)
+  > ![github-data-pipeline](images/dbt_cloud_05.png)
+
+</details>
+
+- You can send the transformed data to the **gh_archive_development** database by using `dbt build --var 'is_test_run: false'` in the DBT console (not your terminal).
+- You can send the transformed data to the **gh_archive_production** database by clicking **Run now** on the Job Page (under Deploy)
+
+### Step 3: Dashboarding in Looker Studio!
+
+
+
