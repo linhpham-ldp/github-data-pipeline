@@ -106,12 +106,13 @@ We will use Prefect Cloud to monitor the flow.
 We will use dbt Cloud to monitor the flow. 
 <details>
   <summary>For setup screenshots, click here</summary>
+  > Screenshots
+
   > ![github-data-pipeline](images/dbt_cloud_01.png)
-  >
-  > ![github-data-pipeline](images/dbt_cloud_02.png)
+<!--   > ![github-data-pipeline](images/dbt_cloud_02.png)
   > ![github-data-pipeline](images/dbt_cloud_03.png)
   > ![github-data-pipeline](images/dbt_cloud_04.png)
-  > ![github-data-pipeline](images/dbt_cloud_05.png)
+  > ![github-data-pipeline](images/dbt_cloud_05.png) -->
 
 </details>
 
