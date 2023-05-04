@@ -1,0 +1,5 @@
+with org as (
+    select *
+    from {{ ref('stg_org') }}
+)
+select * from org

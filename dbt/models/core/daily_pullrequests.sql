@@ -17,6 +17,7 @@ select c.actor_id,
             ELSE c.org_id
        END as c.org_id,
        o.org_login,
+       c.status,
        c.created_weekdate,
        c.created_weekday,
        c.created_hour    
