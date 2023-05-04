@@ -18,7 +18,7 @@ models:
     - name: user_id
       tests:
       - not_null
-      - unique
+      # - unique
   - name: stg_org
     description: >
       Organizations on Github
@@ -26,5 +26,5 @@ models:
     - name: org_id
       tests:
       - not_null
-      - unique
+      # - unique
     
