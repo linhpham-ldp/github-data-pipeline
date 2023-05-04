@@ -1,12 +1,15 @@
-version: 1
+version: 2
 sources:
   - name: staging
-    database: github_data_staging
-    schema: dbt_dwh
+    database: github-data-pipeline
+    schema: gh_archive_staging
     tables:
-        - name: dwh_days
+        - name: raw_data_v3
 
 models:
   - name: stg_commits
     description: >
       GitHub commits
+  - name: stg_pullrequests
+    description: >
+      GitHub pull requests 
